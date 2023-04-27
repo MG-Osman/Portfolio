@@ -1,0 +1,343 @@
+<html>
+<head>
+ <style>
+    @import url('https://fonts.googleapis.com/css?family=VT323');
+    body {
+        /* Set the background color to black */
+        background-color: black;
+        /* Add a subtle noise texture as a background layer */
+        background-image: url(https://www.transparenttextures.com/patterns/noise.png);
+        /* Set the background size and position */
+        background-size: cover;
+        background-position: 0 0;
+        /* Add an animation to change the background position over time */
+        animation: move-noise 5s infinite linear;
+        color: lime;
+        font-family: 'VT323', monospace;
+        font-size: 24px;
+        /* Add a bright lime box shadow around the body */
+        box-shadow: 0 0 20px 10px rgba(0, 255, 0, 0.8);
+        /* Add an animation to change the box shadow offset over time */
+        animation: move-shadow 3s infinite alternate;
+        /* Add a border radius to make the background rounded */
+        border-radius: 50px;
+    }
+    h1 {
+        text-align: center;
+        text-shadow: 0 0 10px lime;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+    }
+    .sidebar {
+        width: 200px;
+        height: 100%;
+        border-right: 2px solid lime;
+        box-shadow: inset 0 0 10px lime;
+        padding: 10px;
+    }
+    .sidebar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .sidebar li {
+        margin: 10px;
+    }
+    .sidebar a {
+        color: lime;
+        text-decoration: none;
+    }
+    .sidebar a:hover {
+        text-decoration: underline;
+    }
+    .content {
+        width: calc(100% - 200px);
+        height: 100%;
+        padding: 10px;
+    } 
+
+    /* Define a custom animation for the noise texture */
+    @keyframes move-noise {
+      from {background-position: 0 0;}
+      to {background-position: -100% -100%;}
+    }
+
+    /* Define a custom animation for the box shadow */
+    @keyframes move-shadow {
+      from {box-shadow: -10px -10px 20px 10px rgba(0, 255, 0, 0.8);}
+      to {box-shadow: 10px 10px 20px 10px rgba(0, 255, 0, 0.8);}
+    } 
+    .content {
+        width: calc(100% - 200px);
+        height: 100%;
+        padding: 10px;
+    } 
+      .github-logo {
+  width: 50px;
+  height: 50px;
+  float: right;
+  filter: brightness(650%) saturate(150%) contrast(150%);
+  transition: all 0.5s ease-in-out;
+}
+
+.github-logo:hover {
+  filter: brightness(800%) saturate(300%) contrast(300%) drop-shadow(0 0 10px lime);
+}
+
+/* add a parent element for the arrow */
+.arrow-container {
+  position: relative; /* this makes the arrow position relative to this element */
+  margin-top: 100px; /* adjust this value as needed to move the arrow under the logo */
+}
+
+.arrow {
+  position: absolute; /* this makes the arrow position absolute within the parent element */
+  top: 10px; /* adjust this value as needed to move the arrow vertically */
+  left: 50%; /* adjust this value as needed to move the arrow horizontally */
+  width: 20px;
+  height: 20px;
+  border: solid lime;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  transform: rotate(45deg); /* change this value to point downwards */
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) rotate(45deg); /* change this value to point downwards */
+  }
+  40% {
+    transform: translateY(-30px) rotate(45deg); /* change this value to point downwards */
+  }
+  60% {
+    transform: translateY(-15px) rotate(45deg); /* change this value to point downwards */
+  }
+}
+
+        .cv {
+            margin-top: 60px;
+        }
+        .cv-section {
+            margin-bottom: 20px;
+        }
+        .cv-title {
+            font-size: 32px;
+        }
+        .cv-item {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>MG-Osmans Portfolio</h1>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="github-logo">
+  <p>My GitHub</p>
+  <div class="arrow bounce"></div>
+</div>
+<p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
+<a href="https://github.com/MG-Osman" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" class="github-logo" alt="GitHub logo"></a>
+            <div id="cv" class="cv">
+                <div class="cv-section">
+                    <div class="cv-title">Personal Information</div>
+                    <div class="cv-item">Name: Ghadar Osman</div>
+                    <div class="cv-item">Email: ghadar@hotmail.co.uk</div>
+                  
+                </div>
+                <div class="cv-section">
+                   <div class="cv-title">Education</div>
+<div class="cv-item">
+<h3>09.2021 – 02/2023
+UNIVERSITY OF GREENWICH</h3>
+
+                      
+BEng Software Engineering: Dropped out at year two.
+                      
+<h3>09.2019 - 07.2021
+SIR SIMON MILTON WESTMINSTER UTC</h3>
+
+                      
+A levels: Computer science(C), Business studies(B). WJEC level 3: Professional construction 
+practice(D) 
+                      
+<h3>09.2013 – 07.2018
+AL RISALAH SECONDARY SCHOOL</h3>
+9 GCSE’s: English language(6), English Literature (7), Math’s(5), Combined science(7-6), Computer 
+science(6), Arabic(A), History(5), Religious Studies(6)
+</div>
+                 
+                </div>
+                <div class="cv-section">
+                    <div class="cv-title">Skills</div>
+                    <div class="cv-item">Programming Languages: HTML5, CSS3, Intermediate JavaScript, Intermediate Python, some C and some Scheme.</div>
+                    <div class="cv-item">Frameworks and Libraries: React, MySQL.</div>
+                    <div class="cv-item">Tools and Platforms: Git, GitHub, VS Code, Learning:AWS</div>
+                </div>
+                <div class="cv-section">
+                </div>
+                <div class="cv-section">
+                    <div class="cv-title">Experience</div>
+                    <div class="cv-item">IT Intern, Springfield University Hospital -- 09.2019</div>
+                    <div class="cv-item">- Gained an insight in the role of IT teams and worked alongside said team in diagnosing 
+minor issues.</div>
+                    
+                    <div class="cv-item">ICT Teaching assistant, Orchard School -- 04.2017</div>
+                    <div class="cv-item">- Helped diagnose and fix IT issues in school classrooms..</div>
+                </div>
+            </div>
+            <div id="projects" class="projects">
+               <style>
+    img {
+      width: 100px;
+      height: 100px;
+      transition: transform 0.3s, box-shadow 0.3s; /* this makes the transition smooth */
+    }
+
+    img:hover {
+      transform: scale(1.1); /* this makes the image 10% larger */
+      box-shadow: 0 0 10px lime; /* this adds a lime shadow around the image */
+    }
+
+    .caption {
+      position: absolute;
+      background-color: black;
+      border-radius: 5px;
+      padding: 5px;
+      display: none;
+      box-shadow: 0 0 10px lime;
+       font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+   <div id="projects" class="projects">
+                <h1>Projects</h1>
+<p>Here are some of my latest projects/goals im working towards:</p>
+               <style>
+  li a {
+    color: lime; 
+    text-decoration: none;
+  }
+</style>
+<li><a href="#"> CompTIA & AWS certifications. namely, Net+ and Sec+ [Comptia] and AWS certified solutions architect [AWS].</a></li>
+<li><a href="#">SP8266 Internet Of Things project – smart monitor</a></li>
+<li><a href="#">Setting up a web-dev service for family, and friends’ businesses.</a></li>
+<li><a href="#"> Improving Linux commands knowledge to enhance safety of home network</a></li>
+<li><a href="#">Making a content creation social media channel(s) entirely with AI</a></li>
+</ul>
+            </div>
+  <h1>My Hobbies</h1>
+  <p>Here are some of my leisure interests within Tech 😊:</p>
+  <ul>
+    <li>
+      <img src="https://th.bing.com/th/id/OIG.54SJXT2bXm5FnXGSeqV.?pid=ImgGn" width="100" height="100" style="float: left; margin-right: 10px;" data-caption="Prompt:'A hamster with glasses using a computer'">
+      "AI art generation - I love experimenting with various AI tools, from stable diffusion to the Adobe firefly to RunwayML's Gen1/2. I'm on a mission to launch a content creation channel that harnesses the power of AI and see what it can deliver."
+    </li>
+  </ul>
+  <ul>
+    <li style="padding: 10px;">
+      <img src="https://th.bing.com/th/id/OIG.7AU_UVtcp7btfyKC2L06?pid=ImgGn" width="80" height="80" style="float: left; margin-right: 10px;" data-caption="Prompt: A monkey wearing a VR headset, painting">
+      Gaming - I play a lot of VR based video games nowadays, mostly RPGs and FPSs.I'm excited for what the future holds for VR especially.
+    </li>
+  </ul>
+  <ul>
+    <li style="padding: 10px;">
+      <img src="https://th.bing.com/th/id/OIG.86jjrYSb0aYURMm8Ndrj?pid=ImgGn" width="80" height="80" style="float: left; margin-right: 10px;" data-caption="Prompt:'A scientist bear analyzing computer chips' ">
+      Learning Arduino - I have Arduino boards from my Uncle and i challenged myself to learn the language so i can program them. I've started with my ESP8266; currently watching tutorials
+    </li>
+  </ul>
+
+  <div id="caption" class="caption"></div>
+
+  <script>
+ const images = document.querySelectorAll('img');
+const caption = document.getElementById('caption');
+
+images.forEach(img => {
+  img.addEventListener('mouseover', function() { // change the event listener to 'mouseover'
+    const rect = img.getBoundingClientRect();
+    caption.style.display = 'none'; // hide the caption first
+    setTimeout(() => {
+      caption.style.left = `${rect.left + window.scrollX - caption.offsetWidth - rect.width - 170}px`; // position the caption very far to the left of the image
+      caption.style.top = `${rect.top + window.scrollY + rect.height / 2 - 25}px`;
+      caption.textContent = img.dataset.caption;
+      caption.style.display = 'block'; // display the caption
+    }, 10);
+  });
+  
+  img.addEventListener('mouseout', function() { // add a new event listener for 'mouseout'
+    caption.style.display = 'none';
+  });
+});
+  </script>
+  <style>
+   .back-to-top-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.back-to-top {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px lime;
+  font-size: 14px;
+}
+
+.back-to-top a {
+  color: green;
+  text-decoration: none;
+}</style>
+  <div class="back-to-top-container" style="display: none;">
+  <div class="back-to-top">
+    <a href="https://github.com/MG-Osman/Portfolio">Code for this site and others accessible via My GitHub!</a>
+  </div>
+</div>
+  <script>
+   const backToTopContainer = document.querySelector('.back-to-top-container');
+const backToTop = document.querySelector('.back-to-top');
+
+window.addEventListener('scroll', function() {
+  if (window.scrollY >= document.documentElement.scrollHeight - window.innerHeight) {
+    backToTopContainer.style.display = 'flex';
+  } else {
+    backToTopContainer.style.display = 'none';
+  }
+});
+  </script>
+  
+  
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
